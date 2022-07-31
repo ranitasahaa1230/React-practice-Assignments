@@ -1,0 +1,11 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.box-clr {
+  height: 100px;
+  width: 100px;
+  border: 2px solid red;
+  display: inline-block;
+  margin: 0.5rem;
+}
