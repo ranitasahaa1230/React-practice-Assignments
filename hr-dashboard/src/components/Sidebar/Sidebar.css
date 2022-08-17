@@ -2,7 +2,7 @@
     border-right: 2px solid var(--borders-color);
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 350px;
     padding-top: 1rem;
     transition: transform 0.2s ease-in;
     position: sticky;

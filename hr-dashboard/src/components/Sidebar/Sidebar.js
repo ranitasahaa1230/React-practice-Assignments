@@ -7,17 +7,13 @@ import {
   MdHome,
   MdPlaylistAdd,
 } from "react-icons/md";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Sidebar.css";
 
 export const Sidebar = () => {
-    const [sidebars, toggleSidebar] = useState(false);
-  const navigate = useNavigate();
+  const [sidebars, toggleSidebar] = useState(false);
   return (
-    <aside
-      className={`${sidebars ? "sidebar open" : "sidebar"}`}
-    //   onClick={() => handleToggleSidebar(false)}
-    >
+    <aside className={`${sidebars ? "sidebar open" : "sidebar"}`}>
       <NavLink to="/" className="navlink">
         <li>
           <MdHome size={25} />
@@ -25,28 +21,22 @@ export const Sidebar = () => {
         </li>
       </NavLink>
 
-      <NavLink to="/playlists" className="navlink">
+      <NavLink to="/dashboard" className="navlink">
         <li>
           <MdPlaylistAdd size={25} />
-          <span>Playlists</span>
+          <span>Dashboard</span>
         </li>
       </NavLink>
-      <NavLink to="/watch-later" className="navlink">
+      <NavLink to="/test" className="navlink">
         <li>
           <MdOutlineWatchLater size={25} />
-          <span>Watch Later </span>
+          <span>Quarterly Test </span>
         </li>
       </NavLink>
-      <NavLink to="/liked-videos" className="navlink">
-        <li>
-          <MdThumbUp size={25} />
-          <span>Liked Videos </span>
-        </li>
-      </NavLink>
-      <NavLink to="/history" className="navlink">
+      <NavLink to="/payroll" className="navlink">
         <li>
           <MdHistory size={25} />
-          <span>History</span>
+          <span>Payroll Management</span>
         </li>
       </NavLink>
       <hr />
