@@ -1,0 +1,6 @@
+.app__container {
+    display: flex;
+    background: var(--primary-color);
+    min-height: calc(100vh - 180px);
+    margin-top: 10vh;
+  }
