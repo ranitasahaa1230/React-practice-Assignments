@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Input from './Input';
+import Square from './Square';
 
 function App() {
+  const [color,setColor]=useState('');
+  const [color1,setColor1]=useState('');
+
+//   const handleClick=()=>{
+//     setCount(count+1);
+//     console.log(count);//0
+//   }
+
+//   const handleClick1=()=>{
+//     setCount((count)=>count+1);
+//     console.log(count);//0
+//   }
+  
+//   const handleClick2=()=>{
+//     setCount(count+1);
+//     setCount(count+1);
+//     console.log(count);//0
+//   }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Square color={color} setColor={setColor} />
+      <Input color={color} setColor={setColor}/>
     </div>
   );
 }
