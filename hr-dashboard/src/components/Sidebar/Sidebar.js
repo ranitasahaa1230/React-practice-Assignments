@@ -1,12 +1,7 @@
 import React, { useState } from "react";
-import {
-  MdOutlineWatchLater,
-  MdExitToApp,
-  MdThumbUp,
-  MdHistory,
-  MdHome,
-  MdPlaylistAdd,
-} from "react-icons/md";
+import { MdOutlineWatchLater, MdExitToApp, MdHome } from "react-icons/md";
+import { FaMoneyCheckAlt } from "react-icons/fa";
+import { GoDashboard } from "react-icons/go";
 import { NavLink } from "react-router-dom";
 import "./Sidebar.css";
 
@@ -23,7 +18,7 @@ export const Sidebar = () => {
 
       <NavLink to="/dashboard" className="navlink">
         <li>
-          <MdPlaylistAdd size={25} />
+          <GoDashboard size={25} />
           <span>Dashboard</span>
         </li>
       </NavLink>
@@ -35,7 +30,7 @@ export const Sidebar = () => {
       </NavLink>
       <NavLink to="/payroll" className="navlink">
         <li>
-          <MdHistory size={25} />
+          <FaMoneyCheckAlt size={25} />
           <span>Payroll Management</span>
         </li>
       </NavLink>
